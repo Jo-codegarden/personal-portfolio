@@ -37,9 +37,9 @@ export const Contact = () => {
     let result = await response.json();
     setFormDetails(formInitialDetails);
     if (result.code === 200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
+      setStatus({ success: true, message: 'Message sent successfully'});
     } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+      setStatus({ success: false, message: 'Something went wrong, please try again later.'});
     }
   };
 
@@ -55,9 +55,9 @@ export const Contact = () => {
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+            {/*<TrackVisibility>*/}
+              {/*{({ isVisible }) => */}
+                {/*<div className={isVisible ? "animate__animated animate__fadeIn" : ""}>*/}
                 <h2>Get In Touch</h2>
                 <form onSubmit={handleSubmit}>
                   <Row>
@@ -85,8 +85,8 @@ export const Contact = () => {
                     }
                   </Row>
                 </form>
-              </div>}
-            </TrackVisibility>
+              {/*</div>}*/}
+            {/*</TrackVisibility>*/}
           </Col>
         </Row>
       </Container>

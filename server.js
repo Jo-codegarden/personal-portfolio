@@ -13,7 +13,7 @@ app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
 
 
-const transporter = nodemailer.createTransport({
+const contactEmail = nodemailer.createTransport({
   service: 'gmail',
 //   port: 465,
 //   secure: true,
@@ -23,7 +23,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-transporter.verify((error) => {
+contactEmail.verify((error) => {
   if (error) {
     console.log(error);
   } else {
@@ -38,14 +38,14 @@ router.post("/contact", (req, res) => {
   const phone = req.body.phone;
   const mail = {
     from: name,
-    to: process.env.GMAIL_PASSWORD,
+    to: process.env.GMAIL_EMAIL,
     subject: "Contact Form Submision @ Jo - codegarden.co.nz",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
            <p>Phone: ${phone}</p>
            <p>Message: ${message}</p>`,
   };
-  transporter.sendMail(mail, (error) => {
+  contactEmail.sendMail(mail, (error) => {
     if (error) {
       res.json(error);
     } else {

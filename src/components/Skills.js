@@ -34,7 +34,7 @@ export const Skills = () => {
                     <Col>
                         <div className='skill-bx'>
                             <h2>Skills</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis libero commodo, pulvinar mauris eu, semper nisl. Duis mattis blandit dui, hendrerit viverra enim porta luctus.</p>
+                            <p>I specialize in building complex web applications, digital product design and developing visual design system. I enjoy creating effortless user experience and designing delightful digital products. </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className='item'>
                                     <img src={meter1} alt="Image1" />
