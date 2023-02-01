@@ -10,34 +10,40 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Personal Project",
+      description: "MERN Stack TODO List Application with Authentication. Using react-query, react-router-dom@6, mongoose, express, react, vite",
       imgUrl: projImg1,
+      linkUrl: "https://mern-todo-app.codegarden.co.nz"
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      linkUrl: ""
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      linkUrl: ""
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      linkUrl: ""
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      linkUrl: ""
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      linkUrl: ""
     },
   ];
 
