@@ -5,6 +5,8 @@ import projImg2 from "../assets/img/project-img2.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import resume from "../assets/img/Jo-resume.pdf";
+import { FileEarmarkArrowDown } from "react-bootstrap-icons";
 
 export const Projects = () => {
 
@@ -27,24 +29,24 @@ export const Projects = () => {
       imgUrl: projImg2,
       linkUrl: ""
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      linkUrl: ""
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      linkUrl: ""
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      linkUrl: ""
-    },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg2,
+    //   linkUrl: ""
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg2,
+    //   linkUrl: ""
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg2,
+    //   linkUrl: ""
+    // },
   ];
 
   return (
@@ -87,10 +89,12 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <h4>About Me</h4>
+                      <p>Hard-working, creative and proactive. Specialised in full stack web development. Ambitious, eager to keep growing and evolving in my profession. Constantly developing new skills and abilities.</p>
+                      <a href={resume} download="Jo's Resume"><button>Resume <FileEarmarkArrowDown size={18} /></button> </a>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>Currently exploring and learning about Web3.</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
