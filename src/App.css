@@ -329,7 +329,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @media (max-width: 480px) {
   .banner h1 {
-    font-size: 40px;
+    font-size: 44px;
   }
   .banner div {
     min-height: 200px;
