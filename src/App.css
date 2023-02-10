@@ -331,9 +331,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .banner h1 {
     font-size: 44px;
   }
-  .banner div {
-    min-height: 200px;
-  }
 }
 
 /************ Skills Css ************/
@@ -666,6 +663,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media (max-width: 480px) {
   .message-bx h3 {
     font-size: 20px;
+    padding: 0;
   }
 }
 
