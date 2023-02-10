@@ -254,8 +254,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
-  display: block;
+  display: flex;
   float: left;
+}
+.banner div {
+  display: inline-block;
+  min-height: 150px;
 }
 
 .banner h1 {
@@ -296,6 +300,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   width: 80%;
+  margin-left: ;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  
   /* opacity: 0.9; */
   animation: updown 3s linear infinite;
 }
@@ -312,6 +323,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+@media (max-width: 720px) {
+  .banner h1 {
+    font-size: 48px;
+  }
 }
 
 /************ Skills Css ************/
@@ -641,7 +657,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
-
+@media (max-width: 480px) {
+  .message-bx h3 {
+    font-size: 20px;
+  }
+}
 
 .App {
   text-align: center;

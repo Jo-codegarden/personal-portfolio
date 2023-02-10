@@ -58,7 +58,9 @@ export const Banner = () => {
                         {({ isVisible }) =>
                             <div className={isVisible ? "animate__animated animate__fadeInLeft" : ""}>
                                 <span className="tagline">Hi. I'm Jo,</span>
+                                <div>
                                 <h1>{`I have experience in `}<span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
+                                </div>
                                 <p>It is an <strong>honor</strong> to be able to make a difference.<br />It is a great <strong>pleaure</strong> to be able to make someones dream come true.</p>
                                 <HashLink to='#connect' style={{ textDecoration: 'none' }}>
                                     <button>Let's connect <ArrowRightCircle size={25} /></button>
