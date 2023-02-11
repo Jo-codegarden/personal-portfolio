@@ -236,6 +236,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+@media (max-width: 480px) {
+  nav.navbar {
+    position: relative;
+    background-color: #e0e0ce;
+  }
+}
+@media (max-width: 768px) and (min-width: 481px) {
+  nav.navbar {
+    position: relative;
+    background-color: #e0e0ce;
+  }
+}
 
 /************ Banner Css ************/
 .banner {
@@ -323,10 +335,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @media (max-width: 768px) and (min-width: 481px) {
   .banner h1 {
-    font-size: 48px;
+    font-size: 44px;
   }
   .banner {
     padding: 150px 0 100px 0;
+  } 
+  .banner div {
+    min-height: 120px;
+  }
+  .banner {
+    padding: 70px 0 100px 0;
   } 
 }
 @media (max-width: 480px) {
@@ -337,8 +355,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     min-height: 190px;
   }
   .banner {
-    padding: 130px 0 100px 0;
+    padding: 50px 0 100px 0;
   } 
+  nav.navbar {
+    position: relative;
+    background-color: #e0e0ce;
+  }
 }
 @media (max-width: 1024px) and (min-width: 769px) {
   .banner h1 {
