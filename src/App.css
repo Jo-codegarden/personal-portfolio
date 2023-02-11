@@ -650,7 +650,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 1.2em;
-  margin-left: 10%;
   text-align: center;
 }
 /* .new-email-bx {
@@ -709,6 +708,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+@media (max-width: 480px) {
+  .message-bx h3 {
+    margin-left: 10%;
+  }
 }
 @media (max-width: 720px) {
   .message-bx h3 {
