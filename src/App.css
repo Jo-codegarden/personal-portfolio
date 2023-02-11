@@ -511,7 +511,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @media (max-width: 720px) {
   .project p {
-    width: 80%;
+    width: 90%;
   }
 }
 /************ Contact Css ************/
